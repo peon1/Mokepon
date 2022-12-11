@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MOKEPON!</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="Assets/Normalize.css">
+    <link rel="stylesheet" href="Assets/CSS.css">
+
+    <!--    Fonts    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Rubik+Spray+Paint&display=swap" rel="stylesheet">
+
+    <!-- Script -->
+    <script src="Assets/Script.js"></script>
+
+
+
+
+</head>
+<body>
+    <h1>MOKEPON! 🔥 💧 🌱</h1>
+    <h2 id="Select-your-character">Selecciona tu mascota</h2>
+
+
+    <main id="Character-select-menu">
+
+
+
+
+            <div id="Select-Hipodoge" class="Select-Pet-Card">
+                <img class="Pet-Image" src="Assets/Characters/Hipodoge.webp" alt="Personaje Hipodoge">
+                <p class="Pet-Attack-Type">Ataque: 💧</p>
+
+
+            </div>
+
+
+            <div id="Select-Ratigueya" class="Select-Pet-Card">
+                <img class="Pet-Image" src="Assets/Characters/Ratigueya.webp" alt="Personaje Ratigueya">
+                <p class="Pet-Attack-Type">Ataque: 🔥</p>
+
+
+
+            </div>
+
+        <div id="Select-Capipepo" class="Select-Pet-Card">
+            <img class="Pet-Image" src="Assets/Characters/Capipepo.webp" alt="Personaje Capipepo">
+            <p class="Pet-Attack-Type">Ataque: 🌱</p>
+
+
+
+        </div>
+
+
+
+
+    </main>
+
+
+
+    <main hidden id="Attack-select-menu">
+
+        <section id="Attack-select-menu-paragraph" hidden>
+            <h2>Elige tu ataque:</h2>
+
+            <p>Mascota seleccionada: <span id="Player-character"></span></p>
+
+            <p>Mascota del enemigo: <span id="Enemy-character"></span></p>
+
+        </section>
+
+
+        <section id="Attack-select-menu-cards" hidden>
+
+            <div id="Fire-attack-button" class="Attack-button">
+                <img src="Assets/Attacks/Fire.webp" alt="Ataque de fuego">
+            </div>
+
+            <div id="Water-attack-button" class="Attack-button">
+                <img src="Assets/Attacks/Water.webp" alt="Ataque de agua">
+            </div>
+
+            <div id="Earth-attack-button" class="Attack-button">
+                <img src="Assets/Attacks/Earth.webp" alt="Ataque de tierra">
+            </div>
+
+        </section>
+    </main>
+
+
+<main hidden id="Result">
+
+    <section hidden id="Results-paragraphs">
+        <p>Tu ataque: <span id="Player-attack"></span> </p>
+        <p>Ataque del enemigo: <span id="Enemy-attack"></span> </p>
+
+        <hr>
+
+        <p>Tu mascota: <span id="Player-pet-result"></span></p>
+        <p>Mascota del enemigo: <span id="Enemy-pet-result"></span></p>
+
+        <p id="Resultado-final"></p>
+
+
+
+
+    </section>
+
+    <section id="Final-result" hidden>
+
+        <p id="Final-result-paragraph"></p>
+    </section>
+    <section id="Reseat" hidden>
+        <button class="reinicio"  id="Resset-button">Siguiente Ronda</button>
+    </section>
+
+
+
+
+</main>
+
+
+    <main hidden id="Final-screen">
+        <h2 id="Final-result-screen"></h2>
+    </main>
+
+    <section id="Lifes">
+        <p>Tus vidas: <span id="Player-lifes">5</span></p>
+        <p>Vidas del enemigo: <span id="Enemy-lifes">5</span></p>
+    </section>
+
+
+
+
+</body>
+</html>

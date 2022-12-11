@@ -1,0 +1,190 @@
+:root
+{
+    --principal-font: 'Oswald', sans-serif;
+    --secondary-font: 'Rubik Spray Paint', cursive;
+}
+
+/* Paul Irish Box sizing - Border Box reseat */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html
+{
+    background: linear-gradient(135deg, #FCB1B1 0%, #F0F696 83%);
+    width: 100%;
+    height: 100%;
+}
+
+h1
+{
+    text-align: center;
+    font-family: var(--principal-font);
+    font-weight: 700;
+}
+
+/* Select pet style */
+
+#Select-your-character, h2
+{
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-weight: 400;
+}
+
+main
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.Select-Pet-Card
+{
+    display: inline-block;
+    width: 15%;
+    height: 15%;
+    border: 7px solid #e00000;
+    transition: transform 300ms ease-out;
+
+}
+
+.Select-Pet-Card:hover
+{
+    transform: translate(0px, 0px) scale(1.7, 1.7);
+    cursor: pointer;
+}
+
+.Pet-Image
+{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 0;
+    border-bottom: thick solid black;
+    background-color: #f0f696;
+}
+
+.Pet-Attack-Type
+{
+    margin-top: 0;
+
+    text-align: center;
+    font-family: var(--secondary-font);
+}
+
+
+/* Select attack style */
+
+#Attack-select-menu
+{
+    flex-direction: column;
+}
+
+#Attack-select-menu-cards
+{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#Attack-select-menu-cards img
+{
+    width: 100%;
+    height: 50%;
+}
+
+#Attack-select-menu p
+{
+    font-family: var(--secondary-font);
+    color: #fc5185;
+    font-size: 2rem;
+    text-align: center;
+
+
+}
+#Attack-select-menu p span
+{
+    font-family: var(--principal-font);
+    color: #43dde6 ;
+
+}
+
+.Attack-button
+{
+    display: inline-block;
+    border: thick solid red;
+    width: 15%;
+    height: 15%;
+    transition: transform 300ms ease-out;
+    background-color: #f0f696;
+}
+
+.Attack-button:hover
+{
+    transform: translate(0px, 0px) scale(1.7, 1.7);
+    cursor: pointer;
+}
+
+
+#Lifes
+{
+    text-align: center;
+    margin-top: 8%;
+    font-family: var(--principal-font);
+}
+#Lifes span
+{
+    color: indianred;
+}
+/* Reseat */
+
+#Result
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button.reinicio{
+    background: linear-gradient(to right,#196BCA ,#6433E0);
+    background-color: #196BCA;
+    color: #fff;
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    padding: 14px 15px;
+    border: 0px solid #000;
+    border-radius: 10px;
+    display: inline-block;
+}
+button.reinicio:hover{
+    background: linear-gradient(to right,#5482d0 ,#7d5ee3);
+    background-color: #5482d0;
+    cursor: pointer;
+}
+button.reinicio:active{
+    transform: scale(0.95);
+}
+
+#Results-paragraphs p
+{
+    font-weight: bold;
+    font-size: 16px;
+
+}
+#Results-paragraphs p span
+{
+    color: red;
+}
+#Final-result-paragraph
+{
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+
